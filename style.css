@@ -101,6 +101,20 @@ font-family: var(--font-principal);
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    animation: bounce;
+    animation-duration:2s;
+    animation-iteration-count:300ms;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
 .audiodiv img {
     padding: 3px 0 0 0;
@@ -342,7 +356,7 @@ footer img {
         justify-content: center;
     }
     .timing img{
-        max-width: 280px;
+        max-width: AUTO;
     }
    
    .fotos {
