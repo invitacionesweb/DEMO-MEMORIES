@@ -7,12 +7,13 @@
 }
 
 body {
+    width: 100vw;
     background-color: var(--color-principal);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     min-width: 320px;
-    overflow-x: unset;
+    overflow-x: hidden;
 
 }
 
@@ -26,11 +27,11 @@ body h2 {
     padding: 0;
 }
 header {
-    background-image: url(./img-editables/desktop2.png);
     width: 100%;
+    background-image: url(./img-editables/desktop2.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size:cover ;
     background-attachment: fixed;
     height: 100VH;
 }
@@ -42,7 +43,7 @@ header {
     justify-content: center;
 }
 .novios img {
-    width: auto;
+    width: 80%;
     animation-name: texto;
     animation-duration: 5s;
 }
@@ -258,14 +259,13 @@ footer img {
     display: none;
 }
 .timing {
-    width: 100%;
+    width: 50%;
+    padding: auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
-.timing img {
-    width: 590px;
 }
 .dresscode {
     width: 100%;
@@ -314,6 +314,7 @@ footer img {
 }
 @media (max-width: 600px) {
     header {
+        background-size: cover;
         background-image: url(./img-editables/namephone.png);
         background-attachment: unset;
         text-align: center;
@@ -322,11 +323,17 @@ footer img {
         display: none;
     }
     .information {
-       
         padding: 10px 0 10px 0 ;
         
     }
-
+    .timing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .timing img{
+        max-width: 280px;
+    }
     .information-bloque {
         width: 90%;
         text-align: center;
@@ -335,16 +342,14 @@ footer img {
        
     }
    .fotos {
-       width: 100%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+        max-width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
    }
    .fotos img {
-       width: 100vw;
+       width: 100%;
    }
     
-   .timing img {
-       width: 390px;
-   }
+
 }
