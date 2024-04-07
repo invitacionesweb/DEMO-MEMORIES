@@ -356,7 +356,7 @@ footer img {
         justify-content: center;
     }
     .timing img{
-        max-width: AUTO;
+        max-width: 360PX;
     }
    
    .fotos {
