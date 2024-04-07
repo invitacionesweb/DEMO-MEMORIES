@@ -326,6 +326,16 @@ footer img {
         padding: 10px 0 10px 0 ;
         
     }
+    .information-bloque {
+        width: 90%;
+        text-align: center;
+        padding: 0px 0 20px 0;
+        color: var(--color-terciario);
+       
+    }
+    .information-bloque p {
+        max-width: 260px;
+    }
     .timing {
         display: flex;
         align-items: center;
@@ -334,13 +344,7 @@ footer img {
     .timing img{
         max-width: 280px;
     }
-    .information-bloque {
-        width: 90%;
-        text-align: center;
-        padding: 0px 0 20px 0;
-        color: var(--color-terciario);
-       
-    }
+   
    .fotos {
         max-width:100%;
         display: flex;
