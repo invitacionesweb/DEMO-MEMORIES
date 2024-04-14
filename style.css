@@ -43,7 +43,7 @@ header {
     justify-content: center;
 }
 .novios img {
-    width: 80%;
+    width: 100%;
     animation-name: texto;
     animation-duration: 5s;
 }
@@ -191,7 +191,11 @@ main img {
 
 }
 .information-bloque {
-    width: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     padding: 0px 0 20px 0;
     color: var(--color-secundario);
